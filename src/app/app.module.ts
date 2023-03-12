@@ -11,12 +11,14 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CalendarComponent } from './calendar/calendar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FightInfoComponent
+    FightInfoComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatDatepickerModule,
     MatFormFieldModule,
     MatInputModule,
-	BrowserAnimationsModule
+    BrowserAnimationsModule
   ],
   providers: [FetchService],
   bootstrap: [AppComponent]
