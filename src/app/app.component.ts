@@ -87,7 +87,7 @@ export class AppComponent {
           homeFighterName.innerHTML = data['DATA'][g]['EVENTS'][i]['HOME_PARTICIPANT_NAME_ONE'];
           awayFighterName.innerHTML = data['DATA'][g]['EVENTS'][i]['AWAY_PARTICIPANT_NAME_ONE'];
           timeBox.innerHTML = ("Date: " + new Date((data['DATA'][g]['EVENTS'][i]['START_TIME']) * 1000));
-          
+          console.log(timeBox);
         }
       }
 	  });
