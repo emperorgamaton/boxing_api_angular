@@ -11,15 +11,15 @@ import { Moment } from 'moment';
 
 
 export class CalendarComponent {
-  diffInDays: number = 0;
+  diffInDays: number = 5;
 
   handleFightDateChange(event: any) {
     const m: Moment = event.value;
     if(m){
       //let selectedDate = moment(m);
 	    var today = new Date();
-	    var diffInDays = moment(m).diff(moment(today), 'days');
-      console.log(diffInDays);
+	    this.diffInDays = moment(m).diff(moment(today), 'days');
+      console.log(this.diffInDays);
     }
   } 
 

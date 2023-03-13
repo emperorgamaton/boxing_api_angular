@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FetchService } from '../shared/fetch.service';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
