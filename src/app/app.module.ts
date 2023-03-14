@@ -4,8 +4,8 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FightInfoComponent } from './fight-info/fight-info.component';
-import { FetchService } from './shared/fetch.service';
+//import { FightInfoComponent } from './fight-info/fight-info.component';
+//import { FetchService } from './shared/fetch.service';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -17,7 +17,6 @@ import { CalendarComponent } from './calendar/calendar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FightInfoComponent,
     CalendarComponent
   ],
   imports: [
@@ -30,7 +29,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     MatInputModule,
     BrowserAnimationsModule
   ],
-  providers: [FetchService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
