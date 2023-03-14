@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FetchService } from '../shared/fetch.service';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { CalendarComponent } from '/workspaces/boxing_api_angular/src/app/calendar/calendar.component';
 
 @Component({
   selector: 'app-fight-info',
@@ -9,7 +10,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 })
 export class FightInfoComponent {
 
-  @Input() parentData!: number;
+  //@Input() parentData!: number;
 
   constructor(private http: HttpClient) {
     let headers = new HttpHeaders({
@@ -18,6 +19,7 @@ export class FightInfoComponent {
     });
 
     //calendar code:
+    //@Input() parentData;
 
     this.http.get<any>('https://flashlive-sports.p.rapidapi.com/v1/events/list?locale=en_INT&sport_id=16&timezone=-4&indent_days=' + this.parentData.toString(), {
 		headers: headers
@@ -83,3 +85,4 @@ export class FightInfoComponent {
     
   }
 }
+
